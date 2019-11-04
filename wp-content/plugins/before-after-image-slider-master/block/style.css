@@ -1,0 +1,42 @@
+/**
+ * Note that these styles are loaded *before* editor styles, so that
+ * editor-specific styles using the same selectors will take precedence.
+ */
+.wp-block-before-after-image-slider-block .image-button-before,
+.wp-block-before-after-image-slider-block .image-button-after {
+	background: #f1f1f1;
+	width: 48.5%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.wp-block-before-after-image-slider-block .image-button-before {
+	float: left;
+}
+
+.wp-block-before-after-image-slider-block .image-button-after {
+	float: right;
+}
+
+.wp-block-before-after-image-slider-block .image-button {
+	padding: 0;
+	display: block;
+}
+
+.wp-block-before-after-image-slider-block button.button {
+	margin: 50px 0;
+}
+
+.wp-block-before-after-image-slider-block img {
+	width: 100%;
+	display: block;
+	z-index: 1;
+	position: relative;
+}
+
+.wp-block-before-after-image-slider-block:after {
+	content: "";
+	clear: both;
+	display: table;
+}
