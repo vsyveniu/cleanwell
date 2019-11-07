@@ -20,10 +20,14 @@ add_action('after_setup_theme', 'cleanwell_setup');
 
 function cleanwell_scripts()
 {
-    wp_enqueue_script('jquery');
-    wp_enqueue_style('style-css', get_stylesheet_uri());
     wp_enqueue_style('bulma-css', get_template_directory_uri() . '/css/bulma.min.css' );
-    wp_enqueue_style('main-css', get_template_directory_uri() . '/css/main.css' );
+    wp_enqueue_style('style-css', get_stylesheet_uri());
+    wp_enqueue_style('header-css', get_template_directory_uri() . '/css/header.css' );
+    if(is_page_template('index.php'))
+    {
+        wp_enqueue_style('main-css', get_template_directory_uri() . '/css/main.css' );
+    }
+    wp_enqueue_script('jquery');
     wp_enqueue_style('service-css', get_template_directory_uri() . '/css/service.css' );
     wp_enqueue_style('about-css', get_template_directory_uri() . '/css/about.css' );
     wp_enqueue_style('portfolio-css', get_template_directory_uri() . '/css/portfolio.css' );

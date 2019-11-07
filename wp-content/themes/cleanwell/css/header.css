@@ -1,0 +1,37 @@
+header
+{
+    border: 1px solid coral;
+}
+.menu-menu-1-container
+{
+    width: 50%;
+    border: 1px solid chartreuse;
+}
+#menu-menu-1
+{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-menu-2-container
+{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid salmon;
+}
+#menu-menu-2
+{
+    display: flex;
+    justify-content: space-between;
+}
+.breadcrumbs
+{
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid salmon;
+    display: flex;
+}
+.breadcrumbs li
+{
+    list-style: none;
+    margin-right: 10px;
+}

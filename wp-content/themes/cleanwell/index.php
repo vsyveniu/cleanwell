@@ -1,8 +1,6 @@
 <?php get_header(); ?>
 <main>
 
-
-
     <?php
     $query = new WP_Query('post_type=index_page');
 
