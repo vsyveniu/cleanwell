@@ -5,26 +5,30 @@
     <?php wp_head(); ?>
 </head>
 <body>
-<header>
-    <section class="level">
-        <div class="level-left has-text-centered">
-            <a href="#"><?php the_custom_logo(); ?></a>
-        </div>
+<header class="hero">
+    <section class="header_top">
+        <section class="container">
+            <div class="level-left level-item">
+                <a href="#"><?php the_custom_logo(); ?></a>
+            </div>
+            <div class="level-item">
 
-            <div class="navbar level-item has-text-centered">
-                <?php
-                    wp_nav_menu(array(
-                            'theme_location' => 'main',
-                            'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                            'menu_class' => 'nav navbar-nav',
-                            'menu_id' => '',
-                            'depth' => 1
-                    ));
-                ?>
+                <div class=" level level-item has-text-centered">
+                    <?php
+                        wp_nav_menu(array(
+                                'theme_location' => 'main',
+                                'items_wrap' => '<div id="%1$s" class="%2$s">%3$s</div>',
+                                'menu_class' => 'navbar',
+                                'menu_id' => 'top_menu',
+                                'depth' => 1
+                        ));
+                    ?>
+                </div>
+                <div class="level-right has-text-centered">
+                    <button class="button is-primary popmake-192">Form</button>
+                </div>
             </div>
-            <div class="level-right has-text-centered">
-                <button class="button is-primary popmake-192">Form</button>
-            </div>
+        </section>
     </section>
     <section class="container is-fluid">
         <div class="">
@@ -32,8 +36,8 @@
             wp_nav_menu(array(
                 'theme_location' => 'service',
                 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                'menu_class' => 'nav navbar-nav',
-                'menu_id' => '',
+                'menu_class' => 'navbar',
+                'menu_id' => 'service_menu',
                 'depth' => 1
             ));
             ?>

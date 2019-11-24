@@ -7,10 +7,18 @@ header
     width: 50%;
     border: 1px solid chartreuse;
 }
-#menu-menu-1
+.header_top
+{
+    border: 1px solid cyan;
+}
+#top_menu
 {
     display: flex;
-    justify-content: space-between;
+
+}
+#top_menu li
+{
+    list-style: none;
 }
 .menu-menu-2-container
 {
